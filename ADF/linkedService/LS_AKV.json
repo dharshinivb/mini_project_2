@@ -1,0 +1,11 @@
+{
+	"name": "LS_AKV",
+	"properties": {
+		"description": "Connection to  key vault",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kv-credentials-sf.vault.azure.net/"
+		}
+	}
+}

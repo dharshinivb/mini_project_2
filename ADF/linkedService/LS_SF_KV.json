@@ -1,0 +1,25 @@
+{
+	"name": "LS_SF_KV",
+	"properties": {
+		"description": "Connecting snowflakes through Key Vault",
+		"annotations": [],
+		"type": "SnowflakeV2",
+		"typeProperties": {
+			"authenticationType": "Basic",
+			"accountIdentifier": "ANB46390",
+			"user": "Pooja",
+			"database": "FITNESS_TRACKER",
+			"warehouse": "COMPUTE_WH",
+			"role": "ACCOUNTADMIN",
+			"host": "UQSPSIL-ANB46390.snowflakecomputing.com",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AKV",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Password"
+			}
+		}
+	}
+}

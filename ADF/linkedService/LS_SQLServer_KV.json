@@ -1,0 +1,29 @@
+{
+	"name": "LS_SQLServer_KV",
+	"properties": {
+		"description": "Connection to sql server through Key Vault",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "localhost",
+			"database": "fitness_tracker",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "Windows",
+			"userName": "AzureAD\\PoojaDharshiniBoopat",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AKV_SQLServer",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Password",
+				"secretVersion": "f1a17d383458430fa8b9acbb71d099b0"
+			}
+		},
+		"connectVia": {
+			"referenceName": "IR-SH",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

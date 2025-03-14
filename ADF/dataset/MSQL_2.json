@@ -1,0 +1,29 @@
+{
+	"name": "MSQL_2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "product_id",
+				"type": "varchar"
+			},
+			{
+				"name": "PRODUCT_Family",
+				"type": "varchar"
+			},
+			{
+				"name": "product_sub_family",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "products"
+		}
+	}
+}

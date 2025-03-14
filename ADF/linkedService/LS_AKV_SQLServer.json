@@ -1,0 +1,11 @@
+{
+	"name": "LS_AKV_SQLServer",
+	"properties": {
+		"description": "Connection to SQL Server",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://KV-SQL-Server.vault.azure.net/"
+		}
+	}
+}

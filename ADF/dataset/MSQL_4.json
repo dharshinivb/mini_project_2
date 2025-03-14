@@ -1,0 +1,30 @@
+{
+	"name": "MSQL_4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "country",
+				"type": "varchar"
+			},
+			{
+				"name": "region",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Country_Region"
+		}
+	}
+}

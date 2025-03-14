@@ -1,0 +1,30 @@
+{
+	"name": "MSQL_3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "company",
+				"type": "varchar"
+			},
+			{
+				"name": "customer_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "customername",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customers"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "fitness-tracker",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bfa24335-3657-4f4a-a81b-e1488dab4706",
+		"tenantId": "2800c0a0-70e9-49be-8733-faeaa6aced99"
+	}
+}

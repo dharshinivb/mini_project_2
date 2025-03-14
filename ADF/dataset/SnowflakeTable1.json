@@ -1,0 +1,93 @@
+{
+	"name": "SnowflakeTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SF_KV",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [
+			{
+				"name": "CUSTOMER_ID",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "PRODUCT_ID",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "PAYMENT_MONTH",
+				"type": "DATE"
+			},
+			{
+				"name": "REVENUE_TYPE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "REVENUE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "QUANTITY",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "DIMENSION_1",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DIMENSION_2",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DIMENSION_3",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DIMENSION_4",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DIMENSION_5",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DIMENSION_6",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DIMENSION_7",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DIMENSION_8",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DIMENSION_9",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DIMENSION_10",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "COMPANIES",
+				"type": "VARCHAR"
+			}
+		],
+		"typeProperties": {
+			"schema": "RAW",
+			"table": "TRANSACTIONS"
+		}
+	}
+}

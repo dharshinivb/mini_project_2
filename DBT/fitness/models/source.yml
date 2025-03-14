@@ -1,0 +1,11 @@
+version: 2
+ 
+sources:
+  - name: source_fitness
+    database: FITNESS_TRACKER
+    schema: RAW
+    tables:
+      - name: CUSTOMERS
+      - name: TRANSACTIONS
+      - name: PRODUCTS
+      - name: COUNTRY_REGION
